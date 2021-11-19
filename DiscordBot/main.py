@@ -15,7 +15,7 @@ async def timed_message():
 
             await channel.send('Hey look %s its 9:29' % ethanid )
         sleep(60)
-
+#piss piss penis
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
