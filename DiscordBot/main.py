@@ -8,16 +8,12 @@ from time import sleep
 client = discord.Client()
 g = git.Git('/home/pi/Documents/DiscordBotGoBRRR')
 
-# async def timed_message():
-#     while 929:
-#         dt = datetime.now()
-#         if( dt.hour == 9 and dt.minute == 29 ):
-#             channel = client.get_channel(649454038483468318)
-#             ethanid = '<@356881123088793600>'
-#             # userid = '<@278375594079551488>'
-#
-#             await channel.send('Hey look %s its 9:29' % ethanid )
-#         sleep(60)
+# *
+# *
+# *  WARNING DO NOT PUT UNTESTED CHANGES IN THIS BOT
+# *  THE BOT WILL GO DOWN IF IT ERRORS OUT
+# *
+# *
 
 @client.event
 async def on_ready():
