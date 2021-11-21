@@ -44,5 +44,3 @@ async def on_message(message):
 licenseFile = open('license.txt', 'r')
 botLicense = licenseFile.readline()
 client.run(botLicense)
-
-#bruh
