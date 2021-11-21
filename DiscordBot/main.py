@@ -38,7 +38,9 @@ async def on_message(message):
         # await message.channel.send('Hello!')
     if message.content.startswith('$update'):
         g.pull()
-        os.execv(sys.argv[0]. sys.argv)
+        os.execv('python main.py')
+        sleep(1)
+        quit()
 
 
 licenseFile = open('license.txt', 'r')
