@@ -130,4 +130,4 @@ dmypy.json
 
 DiscordBot/license.txt
 
-DiscordBot/testBOT.txt
+*.txt
