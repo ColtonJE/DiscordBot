@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 DiscordBot/license.txt
+
 DiscordBot/testBOT.txt
