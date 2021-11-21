@@ -30,4 +30,6 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
-client.run('OTEwOTcyNzcwMjc4NjA0ODcx.YZangQ.ANjGvcrW9R4Z0LIJblwNToXsKnU')
+licenseFile = open('license.txt', 'r')
+botLicense = licenseFile.readline()
+client.run(botLicense)
