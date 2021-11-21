@@ -36,12 +36,12 @@ async def on_message(message):
         # channel = client.get_channel(649454038483468318)
         await message.channel.send('Hey look %s its 9:29 :partying_face:' % ethanid)
         # await message.channel.send('Hello!')
+    #updates the project from the github automatically
     if message.content.startswith('$update'):
         g.pull()
         os.execv('python main.py')
         sleep(1)
         quit()
-
 
 licenseFile = open('license.txt', 'r')
 botLicense = licenseFile.readline()
