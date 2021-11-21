@@ -8,7 +8,6 @@ from time import sleep
 client = discord.Client()
 g = git.Git('/home/pi/Documents/DiscordBotGoBRRR')
 
-
 # async def timed_message():
 #     while 929:
 #         dt = datetime.now()
@@ -39,7 +38,8 @@ async def on_message(message):
     #updates the project from the github automatically
     if message.content.startswith('$update'):
         g.pull()
-        os.execv('python main.py')
+        print("Sucessfully pulled. Restarting now.")
+        os.execv(sys.executable, ['python'] + sys.argv)
         sleep(1)
         quit()
 
