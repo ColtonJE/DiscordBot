@@ -4,6 +4,7 @@ import os
 import sys
 from datetime import datetime
 from time import sleep
+import asyncio
 
 client = discord.Client()
 g = git.Git('/home/pi/Documents/DiscordBotGoBRRR')
@@ -14,6 +15,22 @@ g = git.Git('/home/pi/Documents/DiscordBotGoBRRR')
 # *  THE BOT WILL GO DOWN IF IT ERRORS OUT
 # *
 # *
+
+async def annoyEthan():
+    while 929:
+        if datetime.now().minute == 29 and datetime.now().hour == 9:
+            channels = client.get_all_channels()
+            ethanid = '<@356881123088793600>'
+            channel = client.get_channel(649451080689778731)
+            for guild in client.guilds:
+                for channel in guild.channels:
+                    if channel.name == 'el-generalmente':
+                        await channel.send("Hey look %s its 9:29 :partying_face:" % ethanid)
+            # await channel.send("Hey look %s its 9:29 :partying_face:" % ethanid)
+            print("it is time")
+        await asyncio.sleep(60)
+
+client.loop.create_task(annoyEthan())
 
 @client.event
 async def on_ready():
