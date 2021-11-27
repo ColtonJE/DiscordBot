@@ -1,5 +1,5 @@
 import discord
-import git
+# import git
 import os
 import sys
 from datetime import datetime
@@ -7,7 +7,7 @@ from time import sleep
 import asyncio
 
 client = discord.Client()
-g = git.Git('/home/pi/Documents/DiscordBotGoBRRR')
+# g = git.Git('/home/pi/Documents/DiscordBotGoBRRR')
 
 # *
 # *
